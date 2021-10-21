@@ -54,6 +54,8 @@ module.exports = {
   themeConfig: {
     logo: "https://avatars.githubusercontent.com/u/92788671?s=200&v=4",
     docsDir: "docs",
+    // navbar设置
+    navbar: require("./navbar"),
     sidebar: {
       collapsable: false,
       "/guide/": require("./sidebar"),
@@ -83,4 +85,26 @@ module.exports = {
     toggleDarkMode: "切换夜间模式",
     toggleSidebar: "切换侧边栏",
   },
+  // 插件
+  plugins: [
+    // 回到顶部
+    { "@vuepress/plugin-back-to-top": true },
+    // 搜索
+    [
+      "@vuepress/plugin-search",
+      {
+        hotKeys: "SingleChip",
+        locales: {
+          "/": {
+            placeholder: "Search",
+          },
+          "/zh/": {
+            placeholder: "搜索",
+          },
+        },
+      },
+    ],
+    // 切换页面的进度条
+    { "@vuepress/plugin-nprogress": true },
+  ],
 };

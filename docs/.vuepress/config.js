@@ -89,21 +89,6 @@ module.exports = {
   plugins: [
     // 回到顶部
     { "@vuepress/plugin-back-to-top": true },
-    // 搜索
-    [
-      "@vuepress/plugin-search",
-      {
-        hotKeys: "SingleChip",
-        locales: {
-          "/": {
-            placeholder: "Search",
-          },
-          "/zh/": {
-            placeholder: "搜索",
-          },
-        },
-      },
-    ],
     // 切换页面的进度条
     { "@vuepress/plugin-nprogress": true },
   ],

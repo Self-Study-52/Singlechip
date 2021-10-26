@@ -4,7 +4,7 @@ title: Home
 heroImage: /SingleChip.jpeg
 actions:
   - text: 快速上手 →
-    link: /guide/SingleChip-Basic/
+    link: /guide/SingleChip-Basic
     type: primary
   - text: 仓库简介
     link: /guide/
